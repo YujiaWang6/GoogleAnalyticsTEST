@@ -1,0 +1,710 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rajdhani:wght@500;600&display=swap');
+
+/*--General--*/
+
+html {
+    font:500 1em 'Rajdhani', sans-serif;
+}
+
+body {
+    margin:0;
+}
+
+li, h2, h3 {
+    font-family: 'Press Start 2P', cursive;
+}
+
+img {
+    max-width:100%;
+    height:auto;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+/*--Header--*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.56rem 1.56rem;
+    background-color: #FFEBFA;
+}
+
+h2{
+    margin:0;
+}
+
+#sitename {
+    font-size:3em;
+
+}
+
+#sitename a {
+    text-decoration:none;
+    color:black;
+}
+
+.nav {
+    display:flex;
+    flex-direction: row;
+    list-style-type: none;
+    font-size: 1.25em;
+    gap: 1.68rem;
+    margin: 0;
+    padding:0;
+}
+
+.nav a{
+    text-decoration: none;
+    color:black;
+}
+
+#sitename a:hover {
+    color:#A88488;
+}
+
+.nav a:hover {
+    color:#A88488;
+}
+
+
+/*--Banner--*/
+.bannerContainer {
+    display:flex;
+    font-size:4em;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    padding: 7.98rem;
+    background-color: #FFEBFA;
+    background-image:url("../image/YW.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75%;
+}
+
+
+/*--Project Common--*/
+.hproject {
+    background-color: #FFEBFA;
+    font-size: 2rem;
+    padding: 0.75rem 1.56rem;
+}
+
+.projectcontainer {
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:center;
+
+}
+
+.projectchild {
+    flex-basis: 50%;
+    height: 28.875rem;
+    position:relative;
+}
+
+.projectcontainer img {
+    display: block;
+
+}
+
+.projectheading{
+    padding: 2.3125rem 0 2.25rem 3.5rem;
+    font-size:1.25em;
+
+}
+
+.projectheading a{
+    text-decoration: none;
+    color:black;
+}
+
+
+/*--Project tag--*/
+.projecttag {
+    display: flex;
+    gap:2.1875rem;
+    position: absolute;
+    bottom: 2.3125rem;
+    right: 3.5rem;
+    
+
+}
+
+.tag {
+    padding: 5px;
+    font-family: 'Press Start 2P', cursive;
+    font-size:1.25rem;
+    color:#ffffff;
+    margin:0;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.25);
+
+}
+
+/*--Project 1 --*/
+
+.project1 {
+    margin:0;
+
+}
+
+.project1 a:hover{
+    color: #FFEBFA;
+}
+
+
+.p1ConInfo {
+    background-color: #CCBCC8;
+    
+}
+
+.p1Link {
+    background-color: #998D96;
+    order:-1;
+
+}
+
+.projectchild img{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.subtitle {
+    margin:0;
+    font:600 1.125em 'Rajdhani', sans-serif;
+    padding: 0 3.5rem 0.5625rem 3.5rem;
+}
+
+.projectdetail {
+    margin:0;
+    padding: 0 3.5rem 0 3.5rem;
+}
+
+/*--Project 1 Tag--*/
+.p1tag { 
+    background-color: #998D96;
+    border:3px solid #665E64;
+}
+
+/*--Project 2--*/
+.p2ConInfo {
+    background-color: #BCC8CC;
+}
+
+.p2Link{
+    background-color: #96A0A3;
+}
+
+.project2 a:hover{
+    color: #E7ECED;
+}
+
+
+/*--Project 2 Tag--*/
+.p2tag {
+    background-color: #96A0A3;
+    border:3px solid #70787A;
+}
+
+
+/*--Project 3--*/
+.p3ConInfo {
+    background-color: #C8CCBC;
+    order:1;
+}
+
+.p3Link {
+    background-color: #A0A396;
+    
+}
+
+.project3 a:hover {
+    color:#ECEDE7;
+}
+
+/*--Project 3 Tag--*/
+.p3tag {
+    background-color: #A0A396;
+    border:3px solid #808278;
+}
+
+
+/*--Project 4--*/
+.p4ConInfo {
+    background-color: #CCC0BC;
+    order:2;
+}
+
+.p4Link {
+    background-color: #A39996;
+    order:2;
+}
+
+.project4 a:hover {
+    color:#EDE9E7;
+}
+/*--Project 4 Tag--*/
+.p4tag {
+    background-color: #A39996;
+    border:3px solid #827A78;
+}
+
+
+/*--About Me--*/
+.about {
+    background-color: #C6C2D1;
+    height:37.3125rem;
+}
+
+.about_container {
+
+    display:flex;
+}
+
+
+.intro {
+    flex-basis:52%;
+    order:1;
+    padding: 0 3.5rem 0 0;
+
+}
+
+.intro p{
+    font-size: 1.25rem;
+}
+.photo {
+    flex-basis:48%;
+    position:relative;
+}
+
+.photo img {
+    position:absolute;
+    left:50%;
+    transform: translate(-50%);
+
+}
+
+.hprojectcommon{
+    font-size: 2rem;
+    padding: 1.625rem 0 1.625rem 1.56rem;
+}
+
+.aboutsubh {
+    margin:0;
+    font:600 1.875em 'Rajdhani', sans-serif;
+}
+
+
+/*--Contact--*/
+.contact {
+    background-color: #F7F7E2;
+    position:relative;
+    height:37.3125rem;
+}
+
+.formelement {
+    background-color:white;
+    color:#8E8E8E;
+    font-size: 1.5rem;
+    border: 3px solid #C5C5B4;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.25);
+    border-radius: 10px;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.formbtn {
+    width: 10.875rem;
+    height:2.625rem;
+}
+
+.formbtn:hover {
+    background-color: #C5C5B4;
+    color:#FFFFFF;
+}
+
+input {
+    width:28.5rem;
+    height:3rem;
+
+}
+
+textarea {
+    width:28.5rem;
+    height:7.37rem;
+}
+
+.form { 
+   display:flex;
+   flex-direction:column;
+   gap:3.6rem;
+   align-items: center;
+   padding: 1em 0 0 0;
+}
+
+.contactlogo {
+    position:absolute;
+    display:flex;
+    flex-direction: column;
+    gap:5.625rem;
+    left:2.6875rem;
+    top:10rem;
+}
+
+/*--footer--*/
+.footer {
+    background-color: #FFEBFA;
+    height:12rem;
+    position:relative;
+}
+
+.scroll {
+    display:flex;
+    flex-direction: column;
+    gap:0.8125rem;
+    align-items: center;
+
+}
+.scroll p{
+    margin:0;
+}
+
+#copyright {
+    position:absolute;
+    left:1.875rem;
+    top:8.9375rem;
+   
+}
+
+
+
+
+/*--Media Queries*/
+@media screen and (max-width:1100px){
+    /*Font size & image size*/
+    .bannerContainer{
+        font-size: 3.5em;
+    }
+  
+    h1{
+        padding:4rem;
+    }
+
+    .photo img {
+        max-width:355px;
+        top:10%;
+    }
+
+    .tag {
+        font-size: 1rem;
+        padding:3px;
+    }
+    .about {
+        height:auto;
+    }
+
+
+}
+
+
+@media screen and (max-width:920px) {
+    /*--Shift to on column*/
+    .projectchild {
+        flex-basis:100%;
+    }
+
+    .p2ConInfo {
+        order:1;
+    }
+
+    .p3Link {
+        order:1;
+    }
+    .p3ConInfo {
+        order:2;
+    }
+    .p4ConInfo {
+        order:3;
+    }
+
+    .about_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .photo img{
+        position:relative;
+        left:0;
+        transform: translate(0);
+    
+    }
+
+    .intro {
+        padding:1rem 3.5rem;
+    }
+
+
+}
+
+@media screen and (max-width:768px) {
+    /*--Manu-toggle-*/
+    .menu-toggle {
+        height:2.3125rem;
+        width:5.75rem;
+        background-color: #CCBCC8;
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1.25rem;
+        border:3px solid #7F757D;
+        box-shadow: 4px 4px 4px rgba(0,0,0,0.25);
+        display:block;
+        text-decoration: none;
+        color:black;
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+    }
+    .menu-toggle:hover {
+
+        background-color: #7F757D;
+        color: #FFEBFA;
+    }
+    .nav {
+        flex-direction: column;
+        gap:1em;
+        padding:1em;
+        background-color: rgb(206, 206, 206);
+        display:none;
+    }
+
+    .nav.show-small{
+        display:block;
+        position:absolute;
+        left:0;
+        width:100%;
+        padding:0;
+        flex-direction: column;
+        
+      }
+      .nav.show-small li{
+        margin: 15px 10px;
+      }
+    
+
+      /*Size change*/
+    .bannerContainer{
+        font-size: 3rem;
+    }
+
+    h1 {
+        padding:2rem;
+    }
+
+    /*Shift contact me logo*/
+    .contact {
+        height:auto;
+    }
+    .contactlogo{
+        flex-direction: row;
+        position:static;
+        justify-content: center;
+        padding:6rem 0 1.75rem 0;
+    }
+
+    /*Move scroll button*/
+    .scroll {
+        align-items: flex-end;
+        padding: 1.875rem 6.375rem;
+    }
+
+    /*Contact me button*/
+    .formbtn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+
+@media screen and (max-width:600px) {
+     /*Size change*/
+    .bannerContainer{
+        font-size: 2rem;
+    }
+
+    h1 {
+        padding:1rem;
+    }
+
+    #sitename {
+        font-size: 2em;
+    }
+
+    .hproject, .hprojectcommon{
+        font-size: 1.5rem;
+    }
+     
+    .projectheading {
+        font-size: 1em;
+        padding:1.5rem 1.5rem 0 1.5rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+        padding:1rem 1.5rem 0.5rem 1.5rem;
+    }
+
+    .projectdetail {
+        padding:0 1.5rem 0 1.5rem;
+    }
+
+    .aboutsubh {
+        font-size: 1.75rem;
+    }
+    
+    .intro {
+        padding: 0 1.5rem;
+    }
+    .tag {
+        font-size: 0.75rem;
+        gap: 0.75rem;
+        padding:2px;
+    }
+
+    input, textarea {
+        width:20rem;
+    }
+
+    .formbtn {
+        width:9rem;
+    }
+    .projectchild {
+        height:27rem;
+    }
+    .contactlogo img {
+        width:45px;
+    }
+
+    .scroll img {
+        width:45px;
+    }
+    .scroll p {
+        font-size: 0.75rem;
+    }
+
+
+
+}
+
+@media screen and (max-width:400px){
+    .photo img {
+        max-width:255px;
+        top:10%;
+    }
+    .bannerContainer{
+        font-size: 1.5rem;
+    }
+
+    #sitename {
+        font-size: 1.5em;
+    }
+
+    .menu-toggle {
+        height:1.6rem;
+        width:4.9rem;
+        background-color: #CCBCC8;
+        font-family: 'Press Start 2P', cursive;
+        font-size: 0.875rem;
+        border:2px solid #7F757D;
+        box-shadow: 4px 4px 4px rgba(0,0,0,0.25);
+        display:block;
+    }
+
+    h1 {
+        background-image: none;
+    }
+
+    .hproject, .hprojectcommon{
+        font-size: 1em;
+    }
+
+
+
+    .tag {
+        font-size: 0.625rem;
+        padding:2px;
+    }
+    
+    .p1ConInfo, .p2ConInfo, .p3ConInfo, .p4ConInfo {
+        height:30rem;
+    }
+
+    .p1Link, .p2Link, .p3Link, .p4Link {
+        height:20rem;
+    }
+    .contactlogo {
+        gap:3.4rem;
+    }
+
+    .projectheading {
+        font-size: 0.65rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+    .projectdetail {
+        font-size: 0.875rem;
+    }
+
+    .projecttag {
+        right:1.5rem;
+        gap:0.5rem;
+    }
+
+    .aboutsubh{
+        font-size: 1.25rem;
+    }
+
+    .intro p{
+        font-size: 0.875rem;
+    }
+
+    input {
+        width:16.5rem;
+        height:2rem;
+    }
+    
+    textarea{
+        width:16.5rem;
+        height:5rem;
+    }
+
+    .form {
+        font-size: 1em;
+    }
+
+    .formbtn {
+        width:5.375rem;
+        height:2rem;
+    }
+    .scroll {
+        padding: 2.5rem;
+    }
+
+    .copyright {
+        left:1.5rem;
+    }
+    .nav{
+        font-size: 1em;
+    }
+}
+
