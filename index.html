@@ -166,8 +166,45 @@
                         <textarea id="message" name="message" class="formelement" placeholder="Message"></textarea>
                     </div>
                     <div>
-                        <button type="submit" class="formelement formbtn">Send</button>
+                        <button type="submit" class="formelement formbtn" id="purchase">Send</button>
                     </div>
+                    <script>
+                        document.getElementById("purchase").addEventListener("click", function () {
+                            gtag("event", "purchase", {
+                                    // This purchase event uses a different transaction ID
+                                    // from the previous purchase event so Analytics
+                                    // doesn't deduplicate the events.
+                                    // Learn more: https://support.google.com/analytics/answer/12313109
+                                    transaction_id: "T_12345_2",
+                                    value: 30.03,
+                                    tax: 4.90,
+                                    shipping: 5.99,
+                                    currency: "USD",
+                                    coupon: "SUMMER_SALE",
+                                    items: [
+                                    {
+                                      item_id: "SKU_12345",
+                                      item_name: "Stan and Friends Tee",
+                                      affiliation: "Google Merchandise Store",
+                                      coupon: "SUMMER_FUN",
+                                      discount: 2.22,
+                                      index: 0,
+                                      item_brand: "Google",
+                                      item_category: "Apparel",
+                                      item_category2: "Adult",
+                                      item_category3: "Shirts",
+                                      item_category4: "Crew",
+                                      item_category5: "Short sleeve",
+                                      item_list_id: "related_products",
+                                      item_list_name: "Related Products",
+                                      item_variant: "green",
+                                      location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo",
+                                      price: 10.01,
+                                      quantity: 3
+                                    }]
+                              });
+                          });
+                        </script>
                 </form>
                 <div class="contactlogo">
                     <a href="https://ca.linkedin.com/in/yujia-helen-wang-a1bb26144" target="_blank"><img src="image/linkedin.png" alt="linkedin logo" width="67"></a>
