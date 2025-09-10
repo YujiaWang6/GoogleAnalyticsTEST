@@ -184,29 +184,36 @@
 
                 <button id="purchase">Purchase</button>
 
-                <script>
-                    dataLayer.push({
-                        event: "purchase",
-                        ecommerce: {
-                            transaction_id: "12345",
-                            affiliation: "Online Store",
-                            value: 59.99,
-                            currency: "USD",
-                            tax: 5.00,
-                            shipping: 4.99,
-                            items: [
-                            {
-                                item_id: "sku123",
-                                item_name: "T-Shirt",
-                                price: 25.00,
-                                quantity: 2
-                            }
-                            ]
-                        }
-                        });
-                </script>
+           
+<script>
+    window.dataLayer = window.dataLayer || [];
+  
+    // Add a click listener to the button
+    document.getElementById("purchase").addEventListener("click", function() {
+      dataLayer.push({
+        event: "purchase",
+        ecommerce: {
+          transaction_id: "12345",
+          affiliation: "Online Store",
+          value: 59.99,
+          currency: "USD",
+          tax: 5.00,
+          shipping: 4.99,
+          items: [
+            {
+              item_id: "sku123",
+              item_name: "T-Shirt",
+              price: 25.00,
+              quantity: 2
+            }
+          ]
+        }
+      });
+    });
+  </script>
 
 
+                
 
                 <div class="contactlogo">
                     <a href="https://ca.linkedin.com/in/yujia-helen-wang-a1bb26144" target="_blank"><img src="image/linkedin.png" alt="linkedin logo" width="67"></a>
