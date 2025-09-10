@@ -166,7 +166,7 @@
             <!--Contact-->
             <div class="contact">
                 <h2 class="hprojectcommon" id="contactpage">Contact</h2>
-                <form action="https://yujiawang6.github.io/GoogleAnalyticsTEST" method="get" class="form">
+                <form id="purchaseForm" action="https://yujiawang6.github.io/GoogleAnalyticsTEST" method="get" class="form">
                     <div>
                         <input type="text" name="name" id="name" class="formelement" placeholder="Name">
                     </div>
@@ -177,19 +177,23 @@
                         <textarea id="message" name="message" class="formelement" placeholder="Message"></textarea>
                     </div>
                     <div>
-                        <button type="submit" class="formelement formbtn" id="purchase1">Send</button>
+                        <button type="submit" class="formelement formbtn" id="purchase">Send</button>
                     </div>
                    
                 </form>
 
-                <button id="purchase">Purchase</button>
+                <!-- <button id="purchase">Purchase</button> -->
 
            
 <script>
     window.dataLayer = window.dataLayer || [];
   
     // Add a click listener to the button
-    document.getElementById("purchase").addEventListener("click", function() {
+    document.getElementById("purchaseForm").addEventListener("submit", function(e) {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var message = document.getElementById("message").value;
+
       dataLayer.push({
         event: "purchase",
         ecommerce: {
@@ -207,7 +211,13 @@
               quantity: 2
             }
           ]
-        }
+        },
+        formData: {
+        name: name,
+        email: email,
+        message: message
+      }
+
       });
     });
   </script>
